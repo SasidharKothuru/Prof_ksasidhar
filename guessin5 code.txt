@@ -1,0 +1,317 @@
+                                Assignment Title: Guess in 5 game to find the correct place. 
+                                -----------------------------------------------------------
+
+Provide 3 buzzwords and ask the user to guess the place. User inputs guess. The program should check whether the user’s guess is correct or wrong. Give five chances to the user. By any chance, if the user guess is correct, assign two points otherwise give a clue after five chances and assign one point, if the he / she are success with a clue. Provide only one clue. Display the final score.
+
+
+                                           Python Code: 
+
+
+print("Welcome to guess in 5!")
+print()
+print("We will give you 3 buzzwords and you will have 5 chances to guess the place")
+print()
+print('You will win if you score 5 and above')
+print()
+
+score=0
+
+for x in range(1,6):
+    for i in range(1,6):
+        print()
+        print('Question number: 1')
+        print()
+        print("Your buzzwords: fun, animals, ticket")
+        print()
+        guess=input("Your guess:")
+        print()
+        if guess.upper()=='ZOO':
+            print('CORRECT!')
+            print()
+            score+=2
+            print('Your score is now',score)
+            print()
+            break
+        else:
+            print('INCORRECT')
+            print()
+            print('You have',5-i,'chance(s) left')
+            print()
+            
+    if i==5:
+        print()
+        print('You will be given one clue and 3 more chances:')
+        print()
+        print('''"It rhymes with 'Moo'"''')
+        print()
+        for l in range(1,4):
+            print("Your buzzzwords: fun, animals, ticket")
+            print()
+            guess=input("Your guess:")
+            print()
+            if guess.upper()=='ZOO':
+                print('CORRECT!')
+                print()
+                score+=1
+                print('Your score is now',score)
+                print()
+                break
+            else:
+                print('INCORRECT')
+                print()
+                print('You have',3-l,'chance(s) left')
+                print()
+            
+            if l==3:
+                print()
+                print('You were not able to guess the correct answer')
+                print()
+                print('The correct answer was "Zoo"')
+                print()
+                print('Better luck next time!')
+                print()
+                
+
+
+
+    
+    for i in range(1,6):
+        print()
+        print('Question number: 2')
+        print()
+        print("Your buzzwords: sports, fans, loud")
+        print()
+        guess=input("Your guess:")
+        print()
+        if guess.upper()=='STADIUM':
+            print('CORRECT!')
+            print()
+            score+=2
+            print('Your score is now',score)
+            print()
+            break
+        else:
+            print('INCORRECT')
+            print()
+            print('You have',5-i,'chance(s) left')
+            print()
+            
+    if i==5:
+        print()
+        print('You will be given one clue and 3 more chances:')
+        print()
+        print('''"Games are played here"''')
+        print()
+        for l in range(1,4):
+            print("Your buzzzwords: sports, fans, loud")
+            print()
+            guess=input("Your guess:")
+            print()
+            if guess.upper()=='STADIUM':
+                print('CORRECT!')
+                print()
+                score+=1
+                print('Your score is now',score)
+                print()
+                break
+            else:
+                print('INCORRECT')
+                print()
+                print('You have',3-l,'chance(s) left')
+                print()
+            
+            if l==3:
+                print()
+                print('You were not able to guess the correct answer')
+                print()
+                print('The correct answer was "Stadium"')
+                print()
+                print('Better luck next time!')
+                print()
+
+
+
+
+    for i in range(1,6):
+        print()
+        print('Question number: 3')
+        print()
+        print("Your buzzwords: law, uniform, legal")
+        print()
+        guess=input("Your guess:")
+        print()
+        if guess.upper()=='POLICE STATION':
+            print('CORRECT!')
+            print()
+            score+=2
+            print('Your score is now',score)
+            print()
+            break
+        else:
+            print('INCORRECT')
+            print()
+            print('You have',5-i,'chance(s) left')
+            print()
+            
+    if i==5:
+        print()
+        print('You will be given one clue and 3 more chances:')
+        print()
+        print('''"They protect society"''')
+        print()
+        for l in range(1,4):
+            print("Your buzzzwords: law, uniform, official")
+            print()
+            guess=input("Your guess:")
+            print()
+            if guess.upper()=='POLICE STATION':
+                print('CORRECT!')
+                print()
+                score+=1
+                print('Your score is now',score)
+                print()
+                break
+            else:
+                print('INCORRECT')
+                print()
+                print('You have',3-l,'chance(s) left')
+                print()
+            
+            if l==3:
+                print()
+                print('You were not able to guess the correct answer')
+                print()
+                print('The correct answer was "Police Station"')
+                print()
+                print('Better luck next time!')
+                print()
+                
+
+
+
+    for i in range(1,6):
+        print()
+        print('Question number: 4')
+        print()
+        print("Your buzzwords: children, education, books")
+        print()
+        guess=input("Your guess:")
+        print()
+        if guess.upper()=='SCHOOL':
+            print('CORRECT!')
+            print()
+            score+=2
+            print('Your score is now',score)
+            print()
+            break
+        else:
+            print('INCORRECT')
+            print()
+            print('You have',5-i,'chance(s) left')
+            print()
+            
+    if i==5:
+        print()
+        print('You will be given one clue and 3 more chances:')
+        print()
+        print('''"Children learn here"''')
+        print()
+        for l in range(1,4):
+            print("Your buzzzwords: children, educate, books")
+            print()
+            guess=input("Your guess:")
+            print()
+            if guess.upper()=='SCHOOL':
+                print('CORRECT!')
+                print()
+                score+=1
+                print('Your score is now',score)
+                print()
+                break
+            else:
+                print('INCORRECT')
+                print()
+                print('You have',3-l,'chance(s) left')
+                print()
+            
+            if l==3:
+                print()
+                print('You were not able to guess the correct answer')
+                print()
+                print('The correct answer was "School"')
+                print()
+                print('Better luck next time!')
+                print()
+
+
+    for i in range(1,6):
+        print()
+        print('Question number: 5')
+        print()
+        print("Your buzzwords: tasty, cake, warm")
+        print()
+        guess=input("Your guess:")
+        print()
+        if guess.upper()=='BAKERY':
+            print('CORRECT!')
+            print()
+            score+=2
+            break
+        else:
+            print('INCORRECT')
+            print()
+            print('You have',5-i,'chance(s) left')
+            print()
+            
+    if i==5:
+        print()
+        print('You will be given one clue and 3 more chances:')
+        print()
+        print('''"Sweet treats are made here"''')
+        print()
+        for l in range(1,4):
+            print("Your buzzzwords: tasty, cake, warm")
+            print()
+            guess=input("Your guess:")
+            print()
+            if guess.upper()=='BAKERY':
+                print('CORRECT!')
+                print()
+                score+=1
+                break
+            else:
+                print('INCORRECT')
+                print()
+                print('You have',3-l,'chance(s) left')
+                print()
+            
+            if l==3:
+                print()
+                print('You were not able to guess the correct answer')
+                print()
+                print('The correct answer was "Bakery"')
+                print()
+                print('Better luck next time!')
+                print()
+    break
+
+
+
+
+print()
+print('Your final score is',score)
+print()
+if score>=5:
+    print()
+    print('Since you scored',score,'out of 10, you are a WINNER!')
+    print()
+    print('Congratulations and Thank You For Playing!')
+else:
+    print()
+    print('Since you scored',score,'out of 10, you are not a winner')
+    print()
+    print('Thank You For Playing and Better Luck Next Time!')
+                
+        
+        
+                
